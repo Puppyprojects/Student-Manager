@@ -1,0 +1,8 @@
+#REQUIREMENTS :
+---------------
+
+Flask==2.3.2
+Flask-SQLAlchemy==3.0.5
+mysqlclient==2.2.0     # or use PyMySQL if you prefer
+Flask-Migrate==4.0.5   # optional, for DB migrations
+python-dotenv==1.0.0   # optional, if you want to load env vars
