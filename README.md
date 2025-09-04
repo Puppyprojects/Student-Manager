@@ -20,7 +20,7 @@ User Feedback: Flash messages provide instant feedback for every action (e.g., s
 
 Responsive Design: The interface is built with Bootstrap 5, ensuring it looks great on both desktop and mobile devices.
 
----------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------
 
 Technologies Used 💻
 
@@ -29,6 +29,21 @@ Backend: Python, Flask, Flask-SQLAlchemy
 Frontend: HTML5, CSS3, Bootstrap 5, Jinja Templating
 
 Database: MySQL
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Project Structure:
+
+Student-Manager/
+│── app.py
+│── requirements.txt
+│── README.md
+│── student_db.sql
+│── templates/
+│   ├── index.html
+│   ├── update.html
+│── static/
+    ├── style.css   (optional, for custom styles)
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 The application will be available at http://127.0.0.1:5000.
