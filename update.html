@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Student</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+      body {
+          background: #eef2f6; /* Light gray background */
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .navbar {
+          background-color: #007bff; /* Primary blue navbar */
+          border-bottom: 5px solid #0056b3; /* Darker blue accent */
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .navbar-brand {
+          font-weight: 700;
+          font-size: 1.8rem;
+          color: #ffffff !important;
+      }
+      .card {
+          border-radius: 12px;
+          box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+          margin-bottom: 30px;
+          border: none;
+      }
+      .card-header {
+          background-color: #ffc107; /* Warning yellow for update header */
+          color: #343a40; /* Dark text */
+          font-weight: 600;
+          font-size: 1.25rem;
+          border-bottom: 1px solid #e0e0e0;
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+          padding: 15px 20px;
+      }
+      .btn-success {
+          background-color: #28a745;
+          border-color: #28a745;
+          transition: all 0.3s ease;
+      }
+      .btn-success:hover {
+          background-color: #218838;
+          border-color: #1e7e34;
+          transform: translateY(-2px);
+      }
+      .btn-secondary {
+          background-color: #6c757d;
+          border-color: #6c757d;
+          transition: all 0.3s ease;
+      }
+      .btn-secondary:hover {
+          background-color: #5a6268;
+          border-color: #545b62;
+          transform: translateY(-2px);
+      }
+      .form-control {
+          border-radius: 8px;
+          border: 1px solid #ced4da;
+          padding: 10px 15px;
+          box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+      }
+      .text-center {
+          text-align: center !important;
+      }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark mb-5">
+      <div class="container">
+          <a class="navbar-brand" href="/">📘 Student Manager</a>
+      </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="card mx-auto" style="max-width: 600px;">
+      <div class="card-header">✏️ Update Student</div>
+      <div class="card-body">
+        <form method="POST" class="row g-3">
+          <div class="col-md-6">
+            <input type="text" name="name" value="{{ student.name }}" class="form-control" placeholder="Name" required>
+          </div>
+          <div class="col-md-3">
+            <input type="number" name="age" value="{{ student.age }}" class="form-control" placeholder="Age" required>
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="grade" value="{{ student.grade }}" class="form-control" placeholder="Grade" required>
+          </div>
+          <div class="col-12 d-grid">
+            <button type="submit" class="btn btn-success">✅ Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-center mt-3">
+      <a href="/" class="btn btn-secondary">⬅ Back to Home</a>
+    </div>
+
+  </div>
+</body>
+</html>
